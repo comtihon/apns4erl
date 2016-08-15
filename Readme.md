@@ -8,7 +8,7 @@ Copyright (c) 2010 Inaka Labs SRL <support@inaka.net>, released under the MIT li
 Contact Us
 ==========
 For **questions** or **general comments** regarding the use of Apns4erl, please use our public
-[hipchat room](https://www.hipchat.com/gpBpW3SsT).
+[hipchat room](http://inaka.net/hipchat).
 
 If you find any **bugs** or have a **problem** while using Apns4erl, please [open an issue](https://github.com/inaka/apns4erl/issues/new) in this repo (or a pull request :)).
 
@@ -27,7 +27,7 @@ Using apns4erl is quite simple. First, setup something similar to this in your s
       {key_file, undefined},
       {cert_password, undefined},
       {timeout, 30000},
-      {expires_conn, 300}
+      {expires_conn, 300},
       {feedback_port, 2196},
       {feedback_host, "feedback.sandbox.push.apple.com"},
       {feedback_timeout, 18000000}
@@ -36,7 +36,7 @@ Using apns4erl is quite simple. First, setup something similar to this in your s
 
 **NOTE**: The *apple_host* to use will depend on your environment (production or development). Remember to always use the **correct** certificate, device tokens, and apns hostname for production or development environments.
 
-**NOTE 2**: To generate the .pem file, from the .cer an .p12 files provided by Apple, you can use [this script](/inaka/apns4erl/blob/master/priv/test_certs)
+**NOTE 2**: To generate the .pem file, from the .cer an .p12 files provided by Apple, you can use [this script](https://github.com/inaka/apns4erl/blob/master/priv/test_certs)
 
 Then, once you've started the apns application, you can connect to the APNS network using:
 
